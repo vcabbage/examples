@@ -3,7 +3,8 @@
 > The garbage collector no longer considers arguments live throughout the entirety of a function.
 > For more information, and for how to force a variable to remain live, see the runtime.KeepAlive
 > function added in Go 1.7.
-https://beta.golang.org/doc/go1.8#liveness
+
+https://golang.org/doc/go1.8#liveness
 
 ### Description
 
@@ -21,7 +22,7 @@ with random numbers.
 `DoItKeepAlive()` performs the exact same operation except it inserts a call to `runtime.KeepAlive()`
 to ensure the garbage collector does not collect the slice of `int64`.
 
-## Output
+### Output
 
 Go 1.7:
 ```
